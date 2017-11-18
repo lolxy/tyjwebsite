@@ -1,0 +1,72 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*头部导航栏*/
+.headbox{width: 100%;height: 138px;overflow: hidden;background-color: #1e1d18;}
+.headbox .logo{width: 300px;height: 138px;}
+.headbox nav{height: 50px;margin-top: 88px;}
+.headbox nav li{float: left;height: 50px;padding: 0 10px;}
+.headbox nav li a{display:block;height: 100%;line-height: 50px;color:#ffffff;font-size: 22px;padding: 0 5px;}
+.headbox nav li a:hover,.headbox nav li a.active{color:#fec53b}
+
+/*轮播图*/
+.bannerbox{overflow:hidden; position:relative;}
+.bannerbox .hd{height:10px;overflow:hidden;position:absolute;left:0;bottom:20px;z-index:1;text-align: center;width: 100%;}
+.bannerbox .hd ul{ overflow:hidden;display:inline-block;vertical-align: top;}
+.bannerbox .hd ul li{ float:left;width:50px;height:10px;background:#fff;cursor:pointer;font-size: 0;margin:0 8px;border-radius:10px}
+.bannerbox .hd ul li.on{ background:#ffbd29;}
+.bannerbox .bd{ position:relative;height:100%;z-index:0;}
+.bannerbox .bd li{ zoom:1;vertical-align:middle;}
+.bannerbox .bd img{width: 100%;vertical-align: top;}
+
+/*轮播下方图片*/
+.banner_description{width: 100%;height: 100px;overflow: hidden;background: url(../images/bannerinfo.png) center center no-repeat;}
+
+/*品牌文本*/
+.adsbox{height: 366px;overflow: hidden;position:relative}
+.adsbox img{position:absolute;top: 0;left: 50%;margin-left: -960px;}
+.content{margin:70px auto 100px auto;}
+.content p{font-size: 24px;color:#0d0a01;line-height: 36px;text-indent:2em;}
+
+/*明星产品*/
+.titlebox{height: 240px;overflow: hidden;position:relative}
+.titlebox img{position:absolute;top: 0;left: 50%;margin-left: -960px;}
+.listbox{background-color: #1e1d18;margin-bottom: 90px;}
+.listbox ul{width: 1224px;}
+.listbox li{width: 282px;height: 218px;overflow: hidden;margin-top: 24px;margin-right: 24px;float: left;position:relative}
+.listbox li a{display:block;width: 100%;height: 100%;overflow: hidden;}
+.checkbg{padding-bottom: 125px;background: url(../images/checkicon.jpg) 1080px bottom no-repeat;overflow: hidden;}
+.maskbox{position:absolute;top:0;left: 0;width: 100%;height: 100%;background-color:rgba(51,51,51,.8);transition:all ease-in-out .6s;opacity:0;}transition:all cubic-bezier(0.51,0.34,0.91,0.38) .6s;
+.listbox li:hover .maskbox{opacity:1;}
+.maskbox i{display:block;width: 55px;height: 55px;background: url(../images/view.png) center center no-repeat;background-size:contain;position:absolute;top: 20px;right: 20px;}
+.maskbox .tbox{height: 140px;padding:0 20px;position:absolute;left: 0;bottom: 0;width: 242px;color:#ffffff;}
+.maskbox .tbox h2{font-size: 24px;margin-bottom:10px;}
+.maskbox .tbox p{font-size: 16px;}
+.maskbox .tbox p em{margin-right:3px;}
+
+/*媒体报道*/
+.medialistbox{background: url(../images/mtbg.jpg) center center repeat-y;margin-bottom: 50px;padding-bottom: 110px;overflow: hidden;}
+.medialistbox a{color:#ffffff;}
+.medialistbox li{height: 300px;overflow: hidden;margin: 33px auto;color:#ffffff;font-size: 20px;}
+.medialistbox li .mleft{width: 220px;background-color: #1e1d18;margin-right: 40px;height: 220px;position:relative;padding: 40px;}
+.medialistbox li .mleft h2{font-size: 26px;line-height: 36px;margin-bottom: 10px;}
+.medialistbox li .mleft p{line-height: 30px;}
+.medialistbox li .mleft span{display:block;width: 108px;height: 40px;position:absolute;bottom: 30px;left: 0;border-bottom: 5px solid #fbc000;font-size: 18px;padding-left: 62px;background: url(../images/circleicon.png) 22px -1px no-repeat;line-height: 40px;}
+.medialistbox li .mleft span .righticon{display:inline-block;width: 22px;height: 22px;background: url(../images/righticon.png) center center no-repeat;background-size:contain;margin:10px 0;vertical-align: top;}
+.medialistbox li .mcenter{width: 520px;height: 300px;overflow: hidden;margin-right: 40px;position:relative;}
+.medialistbox li .mcenter .maskbox{position:absolute;top: 0;left: 0;width: 520px;height: 300px;background: rgba(64,32,11,0.3);z-index:4;transition:all ease-in-out .6s;}
+.medialistbox li:hover .maskbox{opacity:1;}
+.medialistbox li .mcenter .maskbox .view{display:block;width: 55px;height: 55px;background: url(../images/view.png) center center no-repeat;background-size:contain;position:absolute;top:50%;left: 50%;margin-left: -27.5px;margin-top: -27.5px;}
+.medialistbox li .mright{height: 300px;overflow: hidden;padding:30px 0;}
+.medialistbox li .mright p{line-height: 30px;font-size: 20px;background: url(../images/circleicon.png) -20px -5px no-repeat;padding-left: 20px;margin-bottom: 5px;}
+.medialistbox li .mright p i{display:inline-block;width: 22px;height: 22px;margin: 4px;vertical-align: top;}
+.qqicon{background: url(../images/qqicon.png) center center no-repeat;background-size:contain;}
+.weiboicon{background: url(../images/weiboicon.png) center center no-repeat;background-size:contain;}
+.weixinicon{background: url(../images/weixinicon.png) center center no-repeat;background-size:contain;}
+.btn{display:block;font-size: 24px;color:#ffffff;background-color: #e5b002;width: 180px;height: 50px;line-height: 50px;margin-top: 20px;text-align: center;}
+/*底部信息*/
+.footer{width: 100%;height: 374px;overflow: hidden;background: url(../images/footer.jpg) center center no-repeat;}
+
+.rightnavbox{width: 130px;position:fixed;left: 50%;margin-left: 520px;top: 100px;}
+.rightnavbox li{width: 130px;height:40px;background-color:rgba(0,0,0,.85);color:#ffffff;font-size:18px;line-height: 40px;text-align: center;margin-bottom: 1px;cursor:pointer;transition:all ease-in-out .6s;}
+.rightnavbox li.on{color:#000000;background-color: #fbc000;}
