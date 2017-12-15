@@ -1,2 +1,57 @@
 @charset "utf-8";
 /* CSS Document */
+html{background: url(../images/indexbg.png) center center repeat-y;}
+.wrapper{width: 1200px;margin: 0 auto;position:relative}
+ul,li{margin: 0;padding: 0;}
+header{height: 230px;overflow: hidden;}
+header .logo{width: 305px;height: 160px;float: left;}
+header .menubox{width: 874px;height: 113px;overflow: hidden;background: url(../images/menubg.png) 4px center no-repeat;float: left;margin-top: 80px;}
+header .menubox ul{width: 822px;height: 60px;margin: 20px auto;overflow: hidden;}
+header .menubox ul li{width: 137px;height: 60px;overflow: hidden;float: left;transition:all ease-in-out 0.5s;}
+header .menubox ul li.menu1{background: url(../images/menu1.png) center center no-repeat;}
+header .menubox ul li.menu2{background: url(../images/menu2.png) center center no-repeat;}
+header .menubox ul li.menu3{background: url(../images/menu3.png) center center no-repeat;}
+header .menubox ul li.menu4{background: url(../images/menu4.png) center center no-repeat;}
+header .menubox ul li.menu5{background: url(../images/menu5.png) center center no-repeat;}
+header .menubox ul li.menu6{background: url(../images/menu6.png) center center no-repeat;}
+header .menubox ul li.menu1.active,header .menubox ul li.menu1:hover{background: url(../images/menu1_active.png) center center no-repeat;}
+header .menubox ul li.menu2.active,header .menubox ul li.menu2:hover{background: url(../images/menu2_active.png) center center no-repeat;}
+header .menubox ul li.menu3.active,header .menubox ul li.menu3:hover{background: url(../images/menu3_active.png) center center no-repeat;}
+header .menubox ul li.menu4.active,header .menubox ul li.menu4:hover{background: url(../images/menu4_active.png) center center no-repeat;}
+header .menubox ul li.menu5.active,header .menubox ul li.menu5:hover{background: url(../images/menu5_active.png) center center no-repeat;}
+header .menubox ul li.menu6.active,header .menubox ul li.menu6:hover{background: url(../images/menu6_active.png) center center no-repeat;}
+header .menubox ul li a{display:block;width: 100%;height: 100%;vertical-align: top;}
+
+.bannerbox .wrapper{height: 790px;}
+.bannerbox .yysj{position:absolute;top: 0;left: -100px;}
+.bannerbox .textcontent{position:absolute;bottom:150px;left: 0;}
+.bannerbox .textbox{position:absolute;bottom: 100px;width: 300px;right: -70px;overflow: hidden;}
+.bannerbox .textbox .tbox{width: 150px;float: left;overflow: hidden;}
+.bannerbox .textbox .tbox img{float: left;width: 50px;}
+.bannerbox .textbox .thbox{width: 80px;float: right;}
+
+.wrapperbox{width: 100%;overflow: hidden;}
+.headbox{width: 100%;height: 138px;overflow: hidden;}
+.headbox .logo{width: 300px;height: 138px;}
+.headbox nav{height: 50px;margin-top: 88px;}
+.headbox nav li{float: left;height: 50px;padding: 0 10px;}
+.headbox nav li a{display:block;height: 100%;line-height: 50px;color:#ffffff;font-size: 22px;padding: 0 5px;}
+.headbox nav li a:hover,.headbox nav li a.active{color:#fec53b}
+
+.rightnavbox{width: 130px;position:fixed;left: 50%;margin-left: 520px;top: 100px;}
+.rightnavbox li{width: 130px;height:40px;background-color:rgba(0,0,0,.85);color:#ffffff;font-size:18px;line-height: 40px;text-align: center;margin-bottom: 1px;cursor:pointer;transition:all ease-in-out .6s;}
+.rightnavbox li.on{color:#000000;background-color: #fbc000;}
+
+.container-fulid{width: 100%;position:relative;}
+.container-fulid .w1920{width: 1920px;position:relative;left: 50%;margin-left: -960px;}
+
+.page4box{padding: 165px 0;}
+.mtbdicon{position:absolute;right: -75px;top: -170px;}
+
+.prightnavbox{width: 188px;position:fixed;left: 50%;margin-left: 500px;top: 100px;background: url(../images/aboutnav.png) center center no-repeat;height: 475px;}
+.prightnavbox ul{padding: 25px;}
+.prightnavbox li{width: 144px;height: 49px;margin-top: 10px; cursor:pointer}
+
+footer{border-top: 5px solid #ffb400;}
+footer .wrapper{overflow: hidden;padding: 30px 0px;}
+footer .wrapper li{float: left;}

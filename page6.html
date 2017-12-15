@@ -23,36 +23,32 @@
         </div>
         <div class="menubox">
         	<ul>
-            	<li class="menu1 active"><a href="index.html"></a></li>
+            	<li class="menu1"><a href="index.html"></a></li>
                 <li class="menu2"><a href="page2.html"></a></li>
                 <li class="menu3"><a href="page3.html"></a></li>
                 <li class="menu4"><a href="page4.html"></a></li>
                 <li class="menu5"><a href="page5.html"></a></li>
-                <li class="menu6"><a href="page6.html"></a></li>
+                <li class="menu6 active"><a href="page6.html"></a></li>
             </ul>
         </div>
     </div>
 </header>
-<div class="bannerbox">
-	<div class="wrapper">
-    	<div class="yysj">
-        	<img src="images/yingyeshijian.png" alt="" class="img-responsive wow slideInLeft" data-wow-duration="1s" data-wow-delay="0.1s"/>
+<div class="container-fulid">
+	<div class="wrapper flowbox">
+    	<div class="flow">
+        	<img src="images/about1.png" alt="" class="img-responsive wow slideInUp" data-wow-duration="1s" data-wow-delay="0.1s"/>
         </div>
-        <div class="banner">
-        	<img src="images/banner.png" alt="" class="img-responsive wow slideInUp" data-wow-duration="1.3s" data-wow-delay="0.2s"/>
+        <div class="flow">
+        	<img src="images/about2.png" alt="" class="img-responsive wow slideInUp" data-wow-duration="1s" data-wow-delay="0.2s"/>
         </div>
-        <div class="textcontent">
-        	<img src="images/text_content.png" alt="" class="img-responsive wow slideInUp" data-wow-duration="1s" data-wow-delay="0.2s"/>
+        <div class="flow">
+        	<img src="images/about3.png" alt="" class="img-responsive wow slideInUp" data-wow-duration="1s" data-wow-delay="0.3s"/>
         </div>
-        <div class="textbox">
-        	<div class="tbox">
-        		<img src="images/text1.png" alt="" class="img-responsive wow slideInRight" data-wow-duration="1s" data-wow-delay="0.15s"/>
-            	<img src="images/text1.png" alt="" class="img-responsive wow slideInRight" data-wow-duration="1.2s" data-wow-delay="0.2s"/>
-            	<img src="images/text1.png" alt="" class="img-responsive wow slideInRight" data-wow-duration="1.3s" data-wow-delay="0.3s"/>
-           	</div>
-            <div class="thbox">
-            	<img src="images/texttitle.png" alt="" class="img-responsive wow slideInRight" data-wow-duration="1.5s" data-wow-delay="0.4s"/>
-            </div>
+        <div class="flow">
+        	<img src="images/about4.png" alt="" class="img-responsive wow slideInUp" data-wow-duration="1s" data-wow-delay="0.4s"/>
+        </div>
+        <div class="flow">
+        	<img src="images/about5.png" alt="" class="img-responsive wow slideInUp" data-wow-duration="1s" data-wow-delay="0.5s"/>
         </div>
     </div>
 </div>
@@ -74,10 +70,35 @@
         </ul>
     </div>
 </footer>
+
+<div class="prightnavbox">
+	<ul>
+         <li class="on"></li>
+         <li></li>
+         <li></li>
+         <li></li>
+         <li></li>
+     </ul>
+</div>
 <script src="js/jquery.min.js"></script>
 <script src="js/wow.min.js"></script>
 <script>
 new WOW().init();
+
+//右侧悬浮导航
+$(window).scroll(function(){
+var scrollH=$(window).scrollTop();
+$(".flowbox .flow").each(function(index){
+var ooH=$(this).offset().top;
+if (scrollH>=ooH) {$('.prightnavbox li').eq(index).addClass('on').siblings().removeClass('on');}
+});
+});
+$('.prightnavbox li').click(function(){
+var index=$(this).index();
+var oH=$(".flowbox .flow").eq(index).offset().top;
+$(this).addClass('on').siblings().removeClass('on');
+$("body,html").animate({scrollTop:oH},600);
+}); 
 </script>
 </body>
 </html>

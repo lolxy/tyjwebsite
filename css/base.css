@@ -5,7 +5,7 @@
         @功能: 重设浏览器默认样式
 */
 
-*{padding: 0;margin: 0;font-family: "微软雅黑";}
+*{padding: 0;margin: 0;font-family:"Microsoft YaHei";}
  
 /* 防止用户自定义背景颜色对网页的影响，添加让用户可以自定义字体 */
 html{
@@ -15,7 +15,7 @@ html{
 	background-color: #fbc000;
 }
 
-html,body{font-family: "微软雅黑";}
+html,body{font-family: "Microsoft YaHei";}
  
 /* 内外边距通常让各个浏览器样式的表现位置不同 */
 body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td,hr,button,article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {
